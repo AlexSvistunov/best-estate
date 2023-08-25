@@ -393,5 +393,61 @@ body {
     background-image: url('../images/you-odd--4.jpg');
 }
 
+/* ------------ */
+
+.prof {
+    padding: 146px 0 var(--offset);
+
+}
+
+
+.prof__title {
+    margin-bottom: 60px;
+}
+
+.prof__cards {
+    margin-bottom: var(--offset);
+}
+
+.prof__card {
+    padding: 20px;
+    border: 1px solid var(--white-color);
+    border-radius: 9px;
+    min-height: 147px;
+
+}
+
+.prof__card-act {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.prof__card-descr {
+    font-size: 32px;
+}
+
+.prof__card-descr span {
+    font-size: 48px;
+}
+
+.prof__box {
+    position: relative;
+}
+
+.prof__box-img {
+    border-radius: 25px;
+}
+
+.prof__box-descr {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: var(--black-color);
+    max-width: 293px;
+}
+
+/* --------- */
+
 
 
