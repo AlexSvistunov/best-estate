@@ -467,6 +467,60 @@ body {
 }
 
 
+/* -------------- */
+
+.footer {
+    padding: var(--offset) 0;
+
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__title {
+    margin-bottom: 40px;
+}
+
+.footer__list {
+    counter-reset: footer-list-num;
+
+}
+
+.footer__item {
+    padding-left: 66px;
+    position: relative;
+    font-size: 24px;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 33px;
+}
+
+.footer__item::before {
+    content: counter(footer-list-num);
+    counter-increment: footer-list-num;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    border: 1px solid #8A8A8A;
+    border-radius: 100px;
+    color: #8A8A8A;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.footer__item-address {
+    font-style: normal;
+}
+
 
 
 
