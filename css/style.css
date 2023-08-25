@@ -449,5 +449,24 @@ body {
 
 /* --------- */
 
+.test {
+    padding: var(--offset) 0;
+}
+
+.test__title {
+    margin-bottom: 40px;
+    max-width: 780px;
+}
+
+.test__btn--1 {
+    margin-bottom: 20px;
+}
+
+.test__btn--2 {
+    border: 1px solid var(--white-color);
+}
+
+
+
 
 
