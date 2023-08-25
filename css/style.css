@@ -1,0 +1,397 @@
+@import '../css/normalize.css';
+@import '../fonts/fonts.css';
+@import '../css/variables.css';
+@import '../css/overall.css';
+
+
+.header {
+    padding: 35px 0 36px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn {
+    width: 40px;
+    height: 11px;
+    position: relative;
+}
+
+body {
+    background-color: var(--black-color);
+    font-family: 'Inter';
+}
+
+.menu-btn::before,
+.menu-btn::after {
+    content: "";
+    position: absolute;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 0;
+
+
+}
+
+.menu-btn::after {
+    top: auto;
+    bottom: 0;
+}
+
+.phone {
+    font-size: 20px;
+
+} 
+
+
+.best {
+    padding: 11px 0 var(--offset);
+
+}
+
+.best__title {
+    margin-bottom: 40px;
+}
+
+
+
+.best__top-box {
+    position: relative;
+}
+
+.best__top-descr {
+    position: absolute;
+    font-size: 48px;
+    left: 40px;
+    bottom: 27px;
+
+}
+
+.best__top-img {
+    border-radius: 15px;
+}
+
+.best__top {
+    margin-bottom: 39px;
+}
+
+.best__bottom-buttons {
+    display: flex;
+
+}
+
+
+
+.best__bottom-btn:first-child {
+    padding: 19.5px 67px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.best__bottom-btn:last-child {
+    font-weight: 300;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 19.5px 51px;
+    border: 1px solid var(--white-color);
+}
+
+.best__list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.best__item {
+    position: relative;
+    padding-left: 38px;
+    min-width: 200px;
+    max-width: 212px;
+}
+
+.best__item span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #8A8A8A;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8A8A8A;
+    font-family: Inter;
+    
+}
+
+
+/* ---------------------------- */
+
+.risk {
+    padding: var(--offset) 0;
+
+}
+
+.risk__list {
+    counter-reset: cardCounter;
+}
+
+.risk__title {
+    margin-bottom: var(--offset);
+}
+
+/* .risk__item {
+    display: flex;
+    justify-content: space-between;
+
+} */
+
+.risk__col:not(:last-child) {
+    margin-bottom: 80px;
+
+}
+
+.risk__col--1 {
+    padding-left: 100px;
+    position: relative;
+    /* margin-right: 40px; */
+    font-size: 24px;
+    font-weight: 500;
+    /* max-width: 437px; */
+
+}
+
+
+.risk__col--1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50px;
+    height: 30px;
+    border-radius: 100px;
+    border: 1px solid #8A8A8A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.risk__col--1 span::before {
+    content: counter(cardCounter);
+    counter-increment: cardCounter;
+    position: absolute;
+    color: #8A8A8A;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.risk__col-sol {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.risk__col-descr {
+    font-size: 16px;
+}
+
+.risk__col1-text {
+    max-width: 460px;
+}
+
+.risk__diamond {
+    position: relative;
+}
+
+.risk__diamond-img {
+    border-radius: 25px;
+}
+
+.risk__diamond-text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    max-width: 320px;
+    color: var(--black-color);
+}
+
+/* ---------------------- */
+
+.projects {
+    padding: var(--offset) 0;
+}
+
+.projects__title {
+    margin-bottom: 63px;
+}
+
+.projects__buttons {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.projects__btn {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.projects__items {
+    margin-bottom: 60px;
+}
+
+.projects__item {
+    position: relative;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #8A8A8A;
+}
+
+.projects__item-img {
+    margin-bottom: 20px;
+    border-radius: 30px;
+
+}
+
+.projects__item-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    border-radius: 100px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    min-height: 60px;
+}
+
+.projects__item-descr {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.projects__item-image {
+    width: 20px;
+    height: 20px;
+}
+
+
+.projects__item-link {
+    position: absolute;
+    inset: 0;
+}
+
+.projects__block-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__show-link {
+    display: inline-block;
+    padding: 15.5px 36px;
+    background-color: transparent;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+
+
+}
+
+/* ------------------------- */
+
+.catalog {
+    padding: var(--offset) 0;
+}
+
+.catalog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.catalog__top-btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #8A8A8A;
+    color: #8A8A8A;
+}
+
+.catalog__title {
+    max-width: 960px;
+}
+
+.catalog__img {
+    margin-bottom: 40px;
+}
+
+/* ----------------- */
+
+.you {
+    padding: var(--offset) 0;
+}
+
+.you__title {
+    margin-bottom: 63px;
+}
+
+.you__list {
+    counter-reset: you-counter;
+}
+
+.you__item {
+    grid-column: 3 span;
+    padding: 20px 25px;
+    height: 260px;
+    width: 260px;
+    border-radius: 13px;
+}
+
+.you__item--num {
+    position: relative;
+    border: 1px solid var(--white-color);
+}
+
+.you__item--num::after {
+    position: absolute;
+    content: counter(you-counter);
+    counter-increment: you-counter;
+    color: #8A8A8A;
+    font-size: 20px;
+    font-weight: 400;
+    bottom: 20px;
+    left: 20px;
+}
+
+.you__item--img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/you--odd.jpg');
+}
+
+.you__item:nth-child(3) {
+    background-image: url('../images/you--odd-2.jpg');
+}
+
+.you__item:nth-child(6) {
+    background-image: url('../images/you--odd-3.jpg');
+}
+
+.you__item:nth-child(8) {
+    background-image: url('../images/you-odd--4.jpg');
+}
+
+
+
