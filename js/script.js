@@ -9,8 +9,24 @@ const swiper = new Swiper('.swiper', {
 
     },
 
-    slidesPerView: 3,
+    slidesPerView: 'auto',
+
     spaceBetween: 30,
-    // loop: true,
+
+    // breakpoints: {
+        
+    //     360: {
+    //         slidesPerView: 1,
+    //     },
+
+    //     1200: {
+    //         slidesPerView: 2,
+    //     },
+
+    //     1400: {
+    //         slidesPerView: 3,
+    //     },
+
+    // },
 
   });
