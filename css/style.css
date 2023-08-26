@@ -48,7 +48,7 @@ body {
 
 } 
 
-
+/* ----------------------------------------------------------------------------------------- */
 .best {
     padding: 11px 0 var(--offset);
 
@@ -56,6 +56,25 @@ body {
 
 .best__title {
     margin-bottom: 40px;
+    line-height: 125%;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-size: 49px;
+}
+
+.best__title span {
+    position: relative;
+    font-weight: 300;
+}
+
+.best__title span::after {
+    position: absolute;
+    content:  "";
+    height: 1px;
+    width: 100%;
+    background-color: var(--white-color);
+    left: 0;
+    bottom: 0;
 }
 
 
@@ -133,7 +152,7 @@ body {
 }
 
 
-/* ---------------------------- */
+/* ----------------------------------------------------------------------------------------- */
 
 .risk {
     padding: var(--offset) 0;
@@ -224,7 +243,7 @@ body {
     color: var(--black-color);
 }
 
-/* ---------------------- */
+/* ----------------------------------------------------------------------------------------- */
 
 .projects {
     padding: var(--offset) 0;
@@ -232,6 +251,7 @@ body {
 
 .projects__title {
     margin-bottom: 63px;
+    max-width: 547px;
 }
 
 .projects__buttons {
@@ -307,8 +327,7 @@ body {
 
 
 }
-
-/* ------------------------- */
+/* ----------------------------------------------------------------------------------------- */
 
 .catalog {
     padding: var(--offset) 0;
@@ -336,7 +355,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* ----------------- */
+/* ----------------------------------------------------------------------------------------- */
 
 .you {
     padding: var(--offset) 0;
@@ -353,8 +372,8 @@ body {
 .you__item {
     grid-column: 3 span;
     padding: 20px 25px;
-    height: 260px;
-    width: 260px;
+    min-height: 260px;
+    min-width: 260px;
     border-radius: 13px;
 }
 
@@ -393,7 +412,7 @@ body {
     background-image: url('../images/you-odd--4.jpg');
 }
 
-/* ------------ */
+/* ----------------------------------------------------------------------------------------- */
 
 .prof {
     padding: 146px 0 var(--offset);
@@ -447,7 +466,137 @@ body {
     max-width: 293px;
 }
 
-/* --------- */
+/* ----------------------------------------------------------------------------------------- */
+
+.steps {
+   padding: 31px 0 var(--offset);
+   /* padding-bottom: var(--offset); */
+}
+
+.steps__title {
+    max-width: 688px;
+    margin-bottom: 60px;
+}
+
+.steps__items {
+    display: flex;
+}
+
+.steps__item:nth-child(3n) {
+    /* margin-right: 20px !important; */
+
+}
+
+.steps__item {
+    box-sizing: border-box;
+    flex: 0 0 360px;
+    padding: 20px;
+    border: 3px solid #D9D9D9;
+    border-radius: 13px;
+    min-height: 393px;
+    /* width: 360px; */
+    
+}
+
+.steps__item-num {
+    color: #8A8A8A;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.steps__item-text {
+    margin-bottom: 20px;
+}
+
+.steps-form {
+    width: 320px;
+    padding-bottom: 20px;
+}
+
+.steps-form__input {
+    display: inline-block;
+    margin-bottom: 12px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    width: 100%;
+    min-height: 50px;
+    padding: 15px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.steps-form__btn {
+    display: inline-block;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    min-height: 50px;
+    padding: 13px;
+    text-align: center;
+}
+
+.steps__item-call {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.steps__item-link {
+    display: block;
+    font-size: 20px;
+}
+
+.swiper {
+    overflow-y: initial;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    font-family: normal;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    border-radius: 100px;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    margin-left: 15px;
+    
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+
+}
+
+.swiper-button-prev {
+    background-image: url('../images/icons/arrow-left.svg');
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    left: auto !important;
+    right: 80px;
+    
+}
+
+.swiper-button-next {
+    background-image: url('../images/icons/arrow-right.svg');
+    background-color: var(--white-color);
+    border: none;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
 
 .test {
     padding: var(--offset) 0;
@@ -467,7 +616,7 @@ body {
 }
 
 
-/* -------------- */
+/* ----------------------------------------------------------------------------------------- */
 
 .footer {
     padding: var(--offset) 0;
