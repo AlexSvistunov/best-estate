@@ -9,24 +9,23 @@ const swiper = new Swiper('.swiper', {
 
     },
 
-    slidesPerView: 'auto',
 
     spaceBetween: 30,
 
-    // breakpoints: {
+    breakpoints: {
         
-    //     360: {
-    //         slidesPerView: 1,
-    //     },
+        360: {
+            slidesPerView: 1,
+        },
 
-    //     1200: {
-    //         slidesPerView: 2,
-    //     },
+        768: {
+            slidesPerView: 2,
+        },
 
-    //     1400: {
-    //         slidesPerView: 3,
-    //     },
+        1200: {
+          slidesPerView: 3.3,
+        }
 
-    // },
+    },
 
   });
