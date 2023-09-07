@@ -15,7 +15,10 @@
 }
 
 .header__logo {
-    margin-left: 117px;
+    /* margin-left: 117px; */
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
 }
 
 .menu-btn {
@@ -45,6 +48,13 @@ body {
 .menu-btn::after {
     top: auto;
     bottom: 0;
+}
+
+.phone-box {
+    flex-grow: 1;
+    text-align: right;
+    flex-basis: 0;
+
 }
 
 .phone {
