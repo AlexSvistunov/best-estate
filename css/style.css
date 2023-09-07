@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.header__logo {
+    margin-left: 117px;
+}
+
 .menu-btn {
     width: 40px;
     height: 11px;
@@ -779,6 +783,14 @@ body {
         padding: var(--offset) 0;
     }
 
+    .header__logo {
+        margin-left: 0;
+    }
+
+    .phone {
+        font-size: 18px;
+    }
+
 
 
 
@@ -823,7 +835,11 @@ body {
 
     .swiper-slide {
         width: 100%;
-      }
+    }
+
+    .header__phone {
+        display: none;
+    }
 }
 
 @media(max-width: 500px) {
@@ -851,16 +867,6 @@ body {
     .container {
         padding: 0 10px;
     }
-
-    .header__phone {
-        display: none;
-    }
-
-    .header__logo {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 
     .grid {
         grid-template-columns: repeat(6, 1fr);
