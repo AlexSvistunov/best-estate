@@ -384,52 +384,35 @@ body {
     margin-bottom: 63px;
 }
 
-.you__list {
-    counter-reset: you-counter;
+.you__columns {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 40px;
 }
 
-.you__item {
+.you__column {
     grid-column: 3 span;
-    padding: 20px 25px;
-    min-height: 260px;
-    min-width: 260px;
+}
+
+.you__column-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.you__column-img {
+    border-radius: 13px;    
+    height: 260px;
+}
+
+.you__column-card {
     border-radius: 13px;
-}
-
-.you__item--num {
-    position: relative;
+    min-height: 260px;
+    padding: 20px;
     border: 1px solid var(--white-color);
+
 }
 
-.you__item--num::after {
-    position: absolute;
-    content: counter(you-counter);
-    counter-increment: you-counter;
-    color: #8A8A8A;
-    font-size: 20px;
-    font-weight: 400;
-    bottom: 20px;
-    left: 20px;
-}
-
-.you__item--img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../images/you--odd.jpg');
-}
-
-.you__item:nth-child(3) {
-    background-image: url('../images/you--odd-2.jpg');
-}
-
-.you__item:nth-child(6) {
-    background-image: url('../images/you--odd-3.jpg');
-}
-
-.you__item:nth-child(8) {
-    background-image: url('../images/you-odd--4.jpg');
-}
 
 /* ----------------------------------------------------------------------------------------- */
 
@@ -703,10 +686,18 @@ body {
 @media(max-width: 1210px) {
 
     .btn-row {
-        grid-column: 8 span;
+        grid-column: 12 span;
     }
-    .you__item {
+
+    .info-row {
+        grid-column: 12 span;
+    }
+    .you__column {
         grid-column: 4 span;
+    }
+
+    .you__columns {
+        grid-template-columns: repeat(8,1fr);
     }
 
 
@@ -726,9 +717,13 @@ body {
         width: calc((100% - 30px) / 2); /* Для двух карточек на одной строке */
       }
 
-      .catalog__top {
+    .catalog__top {
         display: block;
-      }
+    }
+
+    .best__item {
+        max-width: 65%;
+    }
 
 }
 
@@ -746,6 +741,10 @@ body {
 @media(max-width: 912px) {
     .you__item {
         grid-column: 5 span;
+    }
+
+    .projects__item-box {
+        padding: 15px 35px;
     }
 
 }
@@ -785,6 +784,10 @@ body {
 
     .projects__item {
         padding: 20px 0;
+    }
+
+    .projects__item:last-child {
+        border-bottom: none;
     }
 
     :root {
@@ -902,9 +905,19 @@ body {
         font-size: 18px;
     }
 
-    .best__item {
-        max-width: 65%;
+    .you__columns {
+        grid-template-columns: repeat(4,1fr);
     }
+
+    .you__inner-reverse .you__column-card {
+        order: 2;
+    }
+
+    .you__inner-reverse .you__column-img {
+        order: 1;
+    }
+
+
 }
 
 @media(max-width: 500px) {

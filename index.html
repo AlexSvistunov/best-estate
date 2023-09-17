@@ -12,10 +12,10 @@
 <body>
     <header class="header">
         <div class="container header__container">
-           <div class="burger">
-            <button class="header__btn menu-btn btn-reset" aria-label="menu btn">
-            </button>
-           </div>
+            <div class="burger">
+                <button class="header__btn menu-btn btn-reset" aria-label="menu btn">
+                </button>
+            </div>
 
             <a class="header__logo logo" href="#" aria-label="logo">
                 <svg width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,56 +224,68 @@
             <div class="container">
                 <h2 class="you__title section-title">Благодаря нам <span>Вы</span>:</h2>
 
-                <ul class="you__list grid list-reset">
-                    <li class="you__item you__item--img">
+                <div class="you__columns">
+                    <div class="you__column">
+                        <div class="you__column-inner">
+                            <img class="you__column-img" src="images/you-1.jpg" alt="apartment 1">
 
-                    </li>
+                            <div class="you__column-card you__card">
+                                <p class="you__card-descr">Получите доступ к самым эксклюзивным объектам на рынке
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <li class="you__item you__item--num">
-                        <p class="you__item-text">Будете уведомлены даже о самых незначительных деталях о имуществе
-                        </p>
-                    </li>
+                    <div class="you__column you__column-reverse">
+                        <div class="you__column-inner you__inner-reverse">
 
-                    <li class="you__item you__item--img">
+                            <div class="you__column-card you__card">
+                                <p class="you__card-descr">Будете уведомлены даже о самых незначительных деталях о
+                                    имуществе
 
-                    </li>
+                                </p>
+                            </div>
 
-                    <li class="you__item you__item--num">
-                        <p class="you__item-text">Получите возможность заключить сделку по уникальным условиям от
-                            застройщика
-                        </p>
-                    </li>
-
-                    <li class="you__item you__item--num">
-                        <p class="you__item-text">Получите доступ к самым эксклюзивным объектам на рынке
-
-                        </p>
-                    </li>
-
-                    <li class="you__item you__item--img">
-
-                    </li>
-
-                    <li class="you__item you__item--num">
-                        <p class="you__item-text">Независимо от целей гарантировано приобретете недвижимость с
-                            потенциалом роста
-
-                        </p>
-                    </li>
-
-                    <li class="you__item you__item--img">
-
-                    </li>
+                            <img class="you__column-img" src="images/you-2.jpg" alt="apartment 2">
+                        </div>
+                    </div>
 
 
-                </ul>
+                    <div class="you__column">
+                        <div class="you__column-inner">
+                            <img class="you__column-img" src="images/you-3.jpg" alt="apartment 3 ">
+
+                            <div class="you__column-card you__card">
+                                <p class="you__card-descr">Независимо от целей гарантировано приобретете недвижимость с
+                                    потенциалом роста
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="you__column you__column-reverse">
+                        <div class="you__column-inner you__inner-reverse">
+                            <div class="you__column-card you__card">
+                                <p class="you__card-descr">Получите возможность заключить сделку по уникальным условиям
+                                    от застройщика
+                                </p>
+                            </div>
+
+                            <img class="you__column-img" src="images/you-4.jpg" alt="aparatment 4">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="prof">
             <div class="container">
                 <h2 class="prof__title section-title">Эти числа доказывают наши слова о нашем
-                    <span>профессионализме</span></h2>
+                    <span>профессионализме</span>
+                </h2>
 
                 <ul class="prof__cards grid list-reset">
                     <li class="prof__card grid-column">
@@ -345,7 +357,8 @@
         <section class="test">
             <div class="container">
                 <h2 class="test__title section-title">Пройдите тест или оставьте заявку на звонок менеджера. В течение
-                    <span>40 минут</span> предложим<span> <br>10 лотов</span> исходя из Ваших интересов</h2>
+                    <span>40 минут</span> предложим<span> <br>10 лотов</span> исходя из Ваших интересов
+                </h2>
 
                 <button class="test__btn test__btn--1 btn-reset btn-radius big-btn big-btn--light">Оставить
                     заявку</button>
