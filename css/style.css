@@ -410,6 +410,23 @@ body {
     min-height: 260px;
     padding: 20px;
     border: 1px solid var(--white-color);
+    position: relative;
+
+}
+
+.you__card-num {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+
+
+.you__card-num::before {
+    content: attr(data-count);
+    font-size: 20px;
+    color:#8A8A8A;
 
 }
 
@@ -917,6 +934,62 @@ body {
         order: 1;
     }
 
+    .you__column--1 {
+        order: 3;
+    }
+
+    .you__column--2 {
+        order: 1;
+    }
+
+    .you__column--3 {
+        order: 4;
+    }
+
+    .you__column--4 {
+        order: 2;
+    }
+
+    .you__column-card {
+        min-height: 149px;
+    }
+
+    .you__card-descr {
+        max-width: 75%;
+        font-size: 14px;
+        height: 130%;
+        font-weight: 400;
+    }
+
+    .you__column-inner {
+        gap: 12px;
+    }
+
+    .risk__item span {
+        top: -10px;
+        left: 0;
+    }
+
+    .risk__col1-text {
+        padding-top: 25px;
+    }
+
+    .risk__col--1 {
+        padding-left: 0;
+    }
+
+    .prof__card-descr {
+        font-size: 36px;
+    }
+
+    .prof__card-descr span {
+        font-size: 36px;
+    }
+
+
+
+
+
 
 }
 
@@ -959,10 +1032,6 @@ body {
         padding-top: 22px;
     }
 
-    .risk__col--1 span {
-        top: -10px;
-        left: 0;
-    }
 
     .risk__col {
         margin-bottom: 40px;
