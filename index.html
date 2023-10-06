@@ -148,14 +148,14 @@
                 </h2>
 
                 <div class="projects__buttons">
-                    <button class="projects__btn btn-reset active">Все</button>
-                    <button class="projects__btn btn-reset">Квартиры</button>
-                    <button class="projects__btn btn-reset">Пентхаусы</button>
-                    <button class="projects__btn btn-reset">Дома</button>
+                    <button class="projects__btn btn-reset active" data-filter="all">Все</button>
+                    <button class="projects__btn btn-reset" data-filter="apartments">Квартиры</button>
+                    <button class="projects__btn btn-reset" data-filter="penthhouses">Пентхаусы</button>
+                    <button class="projects__btn btn-reset" data-filter="houses">Дома</button>
                 </div>
 
                 <ul class="projects__items grid list-reset">
-                    <li class="projects__item grid-column">
+                    <li class="projects__item grid-column" data-target="apartments">
                         <a class="projects__item-link" href="#"></a>
                         <img class="projects__item-img" src="images/proj/1.jpg" alt="">
                         <div class="projects__item-box">
@@ -165,7 +165,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="projects__item grid-column">
+                    <li class="projects__item grid-column" data-target="houses">
                         <a class="projects__item-link" href="#"></a>
                         <img class="projects__item-img" src="images/proj/2.jpg" alt="">
                         <div class="projects__item-box">
@@ -175,7 +175,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="projects__item grid-column">
+                    <li class="projects__item grid-column" data-target="penthhouses">
                         <a class="projects__item-link" href="#"></a>
                         <img class="projects__item-img" src="images/proj/3.jpg" alt="">
                         <div class="projects__item-box">
@@ -185,7 +185,48 @@
                             </button>
                         </div>
                     </li>
-                    <li class="projects__item grid-column">
+                    <li class="projects__item grid-column" data-target="houses">
+                        <a class="projects__item-link" href="#"></a>
+                        <img class="projects__item-img" src="images/proj/4.jpg" alt="">
+                        <div class="projects__item-box">
+                            <p class="projects__item-descr">Серебряный фонтан</p>
+                            <button class="projects__item-btn btn-reset">
+                                <img class="projects__item-image" src="images/icons/arrow-right-up.svg" alt="arrow img">
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="projects__item grid-column" data-target="apartments">
+                        <a class="projects__item-link" href="#"></a>
+                        <img class="projects__item-img" src="images/proj/1.jpg" alt="">
+                        <div class="projects__item-box">
+                            <p class="projects__item-descr">Крылья</p>
+                            <button class="projects__item-btn btn-reset">
+                                <img class="projects__item-image" src="images/icons/arrow-right-up.svg" alt="arrow img">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="projects__item grid-column" data-target="houses">
+                        <a class="projects__item-link" href="#"></a>
+                        <img class="projects__item-img" src="images/proj/2.jpg" alt="">
+                        <div class="projects__item-box">
+                            <p class="projects__item-descr">Речный</p>
+                            <button class="projects__item-btn btn-reset">
+                                <img class="projects__item-image" src="images/icons/arrow-right-up.svg" alt="arrow img">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="projects__item grid-column" data-target="penthhouses">
+                        <a class="projects__item-link" href="#"></a>
+                        <img class="projects__item-img" src="images/proj/3.jpg" alt="">
+                        <div class="projects__item-box">
+                            <p class="projects__item-descr">Зиларт</p>
+                            <button class="projects__item-btn btn-reset">
+                                <img class="projects__item-image" src="images/icons/arrow-right-up.svg" alt="arrow img">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="projects__item grid-column" data-target="houses">
                         <a class="projects__item-link" href="#"></a>
                         <img class="projects__item-img" src="images/proj/4.jpg" alt="">
                         <div class="projects__item-box">

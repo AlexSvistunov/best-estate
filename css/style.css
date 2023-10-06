@@ -345,6 +345,19 @@ body {
 
 
 }
+
+.projects__btn.active {
+    text-decoration: underline;
+}
+
+.projects__item:nth-child(n + 5) {
+    display: none;
+}
+
+
+.projects__item.visible {
+    display: block;
+}
 /* ----------------------------------------------------------------------------------------- */
 
 .catalog {
