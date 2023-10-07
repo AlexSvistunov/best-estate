@@ -3,14 +3,7 @@
 @import '../css/variables.css';
 @import '../css/overall.css';
 
-/* допилить фукнкционал showmore и tabs,
-сделать белую тему по кнопке,
-сделать переключение языка,
-сделать модалку на кнопку оставить заявку,
-сделать квиз,
-придумать меню бургер(наверное)
-заполнить alt, пробежаться,
-проверить на валидаторе*/
+
 .header {
     padding: 35px 0 36px;
 }
@@ -352,19 +345,6 @@ body {
 
 
 }
-
-.projects__btn.active {
-    text-decoration: underline;
-}
-
-.projects__item:nth-child(n + 5) {
-    display: none;
-}
-
-
-.projects__item.visible {
-    display: block;
-}
 /* ----------------------------------------------------------------------------------------- */
 
 .catalog {
@@ -391,7 +371,6 @@ body {
 
 .catalog__img {
     margin-bottom: 40px;
-    border-radius: 18px;
 }
 
 /* ----------------------------------------------------------------------------------------- */
@@ -404,52 +383,52 @@ body {
     margin-bottom: 63px;
 }
 
-.you__columns {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    gap: 40px;
+.you__list {
+    counter-reset: you-counter;
 }
 
-.you__column {
+.you__item {
     grid-column: 3 span;
-}
-
-.you__column-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.you__column-img {
-    border-radius: 13px;    
-    height: 260px;
-}
-
-.you__column-card {
-    border-radius: 13px;
+    padding: 20px 25px;
     min-height: 260px;
-    padding: 20px;
-    border: 1px solid var(--white-color);
+    min-width: 260px;
+    border-radius: 13px;
+}
+
+.you__item--num {
     position: relative;
-
+    border: 1px solid var(--white-color);
 }
 
-.you__card-num {
-    display: inline-block;
+.you__item--num::after {
     position: absolute;
-    left: 20px;
-    bottom: 20px;
-}
-
-
-
-.you__card-num::before {
-    content: attr(data-count);
+    content: counter(you-counter);
+    counter-increment: you-counter;
+    color: #8A8A8A;
     font-size: 20px;
-    color:#8A8A8A;
-
+    font-weight: 400;
+    bottom: 20px;
+    left: 20px;
 }
 
+.you__item--img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/you--odd.jpg');
+}
+
+.you__item:nth-child(3) {
+    background-image: url('../images/you--odd-2.jpg');
+}
+
+.you__item:nth-child(6) {
+    background-image: url('../images/you--odd-3.jpg');
+}
+
+.you__item:nth-child(8) {
+    background-image: url('../images/you-odd--4.jpg');
+}
 
 /* ----------------------------------------------------------------------------------------- */
 
@@ -721,22 +700,13 @@ body {
 }
 
 @media(max-width: 1210px) {
-
-    .btn-row {
-        grid-column: 12 span;
-    }
-
-    .info-row {
-        grid-column: 12 span;
-    }
-    .you__column {
+    .you__item {
         grid-column: 4 span;
     }
 
-    .you__columns {
-        grid-template-columns: repeat(8,1fr);
+    .best__bottom.grid {
+        display: block;
     }
-
 
     .best__bottom-buttons {
         margin-bottom: 30px;
@@ -754,13 +724,9 @@ body {
         width: calc((100% - 30px) / 2); /* Для двух карточек на одной строке */
       }
 
-    .catalog__top {
+      .catalog__top {
         display: block;
-    }
-
-    .best__item {
-        max-width: 65%;
-    }
+      }
 
 }
 
@@ -778,10 +744,6 @@ body {
 @media(max-width: 912px) {
     .you__item {
         grid-column: 5 span;
-    }
-
-    .projects__item-box {
-        padding: 15px 35px;
     }
 
 }
@@ -823,10 +785,6 @@ body {
         padding: 20px 0;
     }
 
-    .projects__item:last-child {
-        border-bottom: none;
-    }
-
     :root {
         --offset: 40px;
     }
@@ -843,41 +801,6 @@ body {
         font-size: 18px;
     }
 
-    .projects__show-link {
-        padding: 20px 40px;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .catalog__top-btn {
-        display: none;
-    }
-
-    .prof__card {
-        border-radius: 20px;
-    }
-
-    .prof__box-img {
-        min-height: 500px;
-    }
-
-    .btn-row{
-        order: 2;
-    }
-
-    .info-row {
-        order: 1;
-    }
-
-    .best__item:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    .best__list {
-        flex-direction: column;
-        margin-bottom: 40px;
-    }
-
 
 
 
@@ -888,22 +811,17 @@ body {
 }
 
 @media(max-width: 600px) {
-
-    .best__title {
-        font-size: 32px;
-    }
-
-    .risk__col1-text {
-        font-size: 16px;
-    }
-
     .best__top {
         display: none;
     }
 
+    .best__bottom-row {
+        order: 2;
+    }
 
     .best__bottom-buttons {
         display: block;
+        order: 1;
     }
 
     .best__bottom-btn {
@@ -932,91 +850,19 @@ body {
     .header__phone {
         display: none;
     }
-    
-    .projects__item-box {
-        align-items: center;
-        padding: 15px 30px;
-    }
-
-    .projects__item-descr {
-        font-size: 18px;
-    }
-
-    .you__columns {
-        grid-template-columns: repeat(4,1fr);
-    }
-
-    .you__inner-reverse .you__column-card {
-        order: 2;
-    }
-
-    .you__inner-reverse .you__column-img {
-        order: 1;
-    }
-
-    .you__column--1 {
-        order: 3;
-    }
-
-    .you__column--2 {
-        order: 1;
-    }
-
-    .you__column--3 {
-        order: 4;
-    }
-
-    .you__column--4 {
-        order: 2;
-    }
-
-    .you__column-card {
-        min-height: 149px;
-    }
-
-    .you__card-descr {
-        max-width: 75%;
-        font-size: 14px;
-        height: 130%;
-        font-weight: 400;
-    }
-
-    .you__column-inner {
-        gap: 12px;
-    }
-
-    .risk__item span {
-        top: -10px;
-        left: 0;
-    }
-
-    .risk__col1-text {
-        padding-top: 25px;
-    }
-
-    .risk__col--1 {
-        padding-left: 0;
-    }
-
-    .prof__card-descr {
-        font-size: 36px;
-    }
-
-    .prof__card-descr span {
-        font-size: 36px;
-    }
-
-
-
-
-
-
 }
 
 @media(max-width: 500px) {
+    .best__list {
+        display: block;
+    }
 
     .best__item:not(:last-child) {
         margin-bottom: 20px;
+    }
+
+    .best__title {
+        font-size: 31px;
     }
 
     
@@ -1052,6 +898,10 @@ body {
         padding-top: 22px;
     }
 
+    .risk__col--1 span {
+        top: -10px;
+        left: 0;
+    }
 
     .risk__col {
         margin-bottom: 40px;

@@ -12,10 +12,10 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <div class="burger">
-                <button class="header__btn menu-btn btn-reset" aria-label="menu btn">
-                </button>
-            </div>
+           <div class="burger">
+            <button class="header__btn menu-btn btn-reset" aria-label="menu btn">
+            </button>
+           </div>
 
             <a class="header__logo logo" href="#" aria-label="logo">
                 <svg width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,13 +48,13 @@
                 </div>
 
                 <div class="best__bottom grid">
-                    <div class="best__bottom-row grid-column btn-row">
+                    <div class="best__bottom-row grid-column">
                         <div class="best__bottom-buttons">
                             <a class="best__bottom-btn btn-radius" href="#">Подобрать недвижимость</a>
                             <a class="best__bottom-btn btn-radius" href="#">О нас</a>
                         </div>
                     </div>
-                    <div class="best__bottom-row grid-column info-row">
+                    <div class="best__bottom-row grid-column">
                         <ul class="best__list list-reset">
                             <li class="best__item">Бесплатно подбираем недвижимость в Москве и Дубаях премиум класса
                                 <span>1</span>
@@ -148,14 +148,14 @@
                 </h2>
 
                 <div class="projects__buttons">
-                    <button class="projects__btn btn-reset active" data-filter="all">Все</button>
-                    <button class="projects__btn btn-reset" data-filter="apartments">Квартиры</button>
-                    <button class="projects__btn btn-reset" data-filter="penthhouses">Пентхаусы</button>
-                    <button class="projects__btn btn-reset" data-filter="houses">Дома</button>
+                    <button class="projects__btn btn-reset active">Все</button>
+                    <button class="projects__btn btn-reset">Квартиры</button>
+                    <button class="projects__btn btn-reset">Пентхаусы</button>
+                    <button class="projects__btn btn-reset">Дома</button>
                 </div>
 
                 <ul class="projects__items grid list-reset">
-                    <li class="projects__item grid-column" data-target="apartments">
+                    <li class="projects__item grid-column">
                         <a class="projects__item-link" href="#"></a>
                         <img class="projects__item-img" src="images/proj/1.jpg" alt="">
                         <div class="projects__item-box">
@@ -165,7 +165,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="projects__item grid-column" data-target="houses">
+                    <li class="projects__item grid-column">
                         <a class="projects__item-link" href="#"></a>
                         <img class="projects__item-img" src="images/proj/2.jpg" alt="">
                         <div class="projects__item-box">
@@ -175,7 +175,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="projects__item grid-column" data-target="penthhouses">
+                    <li class="projects__item grid-column">
                         <a class="projects__item-link" href="#"></a>
                         <img class="projects__item-img" src="images/proj/3.jpg" alt="">
                         <div class="projects__item-box">
@@ -185,48 +185,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="projects__item grid-column" data-target="houses">
-                        <a class="projects__item-link" href="#"></a>
-                        <img class="projects__item-img" src="images/proj/4.jpg" alt="">
-                        <div class="projects__item-box">
-                            <p class="projects__item-descr">Серебряный фонтан</p>
-                            <button class="projects__item-btn btn-reset">
-                                <img class="projects__item-image" src="images/icons/arrow-right-up.svg" alt="arrow img">
-                            </button>
-                        </div>
-                    </li>
-
-                    <li class="projects__item grid-column" data-target="apartments">
-                        <a class="projects__item-link" href="#"></a>
-                        <img class="projects__item-img" src="images/proj/1.jpg" alt="">
-                        <div class="projects__item-box">
-                            <p class="projects__item-descr">Крылья</p>
-                            <button class="projects__item-btn btn-reset">
-                                <img class="projects__item-image" src="images/icons/arrow-right-up.svg" alt="arrow img">
-                            </button>
-                        </div>
-                    </li>
-                    <li class="projects__item grid-column" data-target="houses">
-                        <a class="projects__item-link" href="#"></a>
-                        <img class="projects__item-img" src="images/proj/2.jpg" alt="">
-                        <div class="projects__item-box">
-                            <p class="projects__item-descr">Речный</p>
-                            <button class="projects__item-btn btn-reset">
-                                <img class="projects__item-image" src="images/icons/arrow-right-up.svg" alt="arrow img">
-                            </button>
-                        </div>
-                    </li>
-                    <li class="projects__item grid-column" data-target="penthhouses">
-                        <a class="projects__item-link" href="#"></a>
-                        <img class="projects__item-img" src="images/proj/3.jpg" alt="">
-                        <div class="projects__item-box">
-                            <p class="projects__item-descr">Зиларт</p>
-                            <button class="projects__item-btn btn-reset">
-                                <img class="projects__item-image" src="images/icons/arrow-right-up.svg" alt="arrow img">
-                            </button>
-                        </div>
-                    </li>
-                    <li class="projects__item grid-column" data-target="houses">
+                    <li class="projects__item grid-column">
                         <a class="projects__item-link" href="#"></a>
                         <img class="projects__item-img" src="images/proj/4.jpg" alt="">
                         <div class="projects__item-box">
@@ -240,9 +199,9 @@
                 </ul>
 
                 <div class="projects__block-btn">
-                    <button class="projects__show-link btn-radius btn-reset">
+                    <a class="projects__show-link btn-radius" href="#">
                         Показать еще
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -265,76 +224,56 @@
             <div class="container">
                 <h2 class="you__title section-title">Благодаря нам <span>Вы</span>:</h2>
 
-                <div class="you__columns">
-                    <div class="you__column you__column--1">
-                        <div class="you__column-inner">
-                            <img class="you__column-img" src="images/you-1.jpg" alt="apartment 1">
+                <ul class="you__list grid list-reset">
+                    <li class="you__item you__item--img">
 
-                            <div class="you__column-card you__card">
-                                <p class="you__card-descr">Получите доступ к самым эксклюзивным объектам на рынке
-                                </p>
+                    </li>
 
-                                <span class="you__card-num"data-count="3"></span>
-                            </div>
-                        </div>
-                    </div>
+                    <li class="you__item you__item--num">
+                        <p class="you__item-text">Будете уведомлены даже о самых незначительных деталях о имуществе
+                        </p>
+                    </li>
 
-                    <div class="you__column you__column-reverse you__column--2">
-                        <div class="you__column-inner you__inner-reverse">
+                    <li class="you__item you__item--img">
 
-                            <div class="you__column-card you__card">
-                                <p class="you__card-descr">Будете уведомлены даже о самых незначительных деталях о
-                                    имуществе
+                    </li>
 
-                                </p>
+                    <li class="you__item you__item--num">
+                        <p class="you__item-text">Получите возможность заключить сделку по уникальным условиям от
+                            застройщика
+                        </p>
+                    </li>
 
-                                <span class="you__card-num" data-count="1"></span>
-                            </div>
+                    <li class="you__item you__item--num">
+                        <p class="you__item-text">Получите доступ к самым эксклюзивным объектам на рынке
 
-                            <img class="you__column-img" src="images/you-2.jpg" alt="apartment 2">
-                        </div>
-                    </div>
+                        </p>
+                    </li>
 
+                    <li class="you__item you__item--img">
 
-                    <div class="you__column you__column--3">
-                        <div class="you__column-inner">
-                            <img class="you__column-img" src="images/you-3.jpg" alt="apartment 3 ">
+                    </li>
 
-                            <div class="you__column-card you__card">
-                                <p class="you__card-descr">Независимо от целей гарантировано приобретете недвижимость с
-                                    потенциалом роста
+                    <li class="you__item you__item--num">
+                        <p class="you__item-text">Независимо от целей гарантировано приобретете недвижимость с
+                            потенциалом роста
 
-                                </p>
+                        </p>
+                    </li>
 
-                                <span class="you__card-num" data-count="4"></span>
-                            </div>
-                        </div>
-                    </div>
+                    <li class="you__item you__item--img">
+
+                    </li>
 
 
-                    <div class="you__column you__column-reverse you__column--4">
-                        <div class="you__column-inner you__inner-reverse">
-                            <div class="you__column-card you__card">
-                                <p class="you__card-descr">Получите возможность заключить сделку по уникальным условиям
-                                    от застройщика
-                                </p>
-
-                                <span class="you__card-num" data-count="2"></span>
-                            </div>
-
-                            <img class="you__column-img" src="images/you-4.jpg" alt="aparatment 4">
-
-                        </div>
-                    </div>
-                </div>
+                </ul>
             </div>
         </section>
 
         <section class="prof">
             <div class="container">
                 <h2 class="prof__title section-title">Эти числа доказывают наши слова о нашем
-                    <span>профессионализме</span>
-                </h2>
+                    <span>профессионализме</span></h2>
 
                 <ul class="prof__cards grid list-reset">
                     <li class="prof__card grid-column">
@@ -406,8 +345,7 @@
         <section class="test">
             <div class="container">
                 <h2 class="test__title section-title">Пройдите тест или оставьте заявку на звонок менеджера. В течение
-                    <span>40 минут</span> предложим<span> <br>10 лотов</span> исходя из Ваших интересов
-                </h2>
+                    <span>40 минут</span> предложим<span> <br>10 лотов</span> исходя из Ваших интересов</h2>
 
                 <button class="test__btn test__btn--1 btn-reset btn-radius big-btn big-btn--light">Оставить
                     заявку</button>
