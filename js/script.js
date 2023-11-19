@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const swiper = new Swiper('.swiper', {
 
 
@@ -81,3 +82,36 @@ showMore.addEventListener('click', () => {
     
 
 });
+=======
+const swiper = new Swiper('.swiper', {
+
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    
+      navigationDisabledClass: true,
+
+    },
+
+
+    spaceBetween: 30,
+
+    breakpoints: {
+        
+        360: {
+            slidesPerView: 1,
+        },
+
+        768: {
+            slidesPerView: 2,
+        },
+
+        1200: {
+          slidesPerView: 3.3,
+        }
+
+    },
+
+  });
+>>>>>>> 0408fa598e4377a0ef36723f85341bf916178de7
