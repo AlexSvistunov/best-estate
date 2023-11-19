@@ -35,7 +35,6 @@ projButtons.forEach(projButton => {
 
   projButton.addEventListener('click', (e) => {
     const dataBtn = projButton.getAttribute('data-filter');
-    console.log(dataBtn);
     projButtons.forEach(projBtn => {
       projBtn.classList.remove('active');
     });
