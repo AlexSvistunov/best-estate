@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const swiper = new Swiper('.swiper', {
 
 
@@ -82,7 +82,7 @@ showMore.addEventListener('click', () => {
     
 
 });
-=======
+
 const swiper = new Swiper('.swiper', {
 
 
@@ -114,4 +114,4 @@ const swiper = new Swiper('.swiper', {
     },
 
   });
->>>>>>> 0408fa598e4377a0ef36723f85341bf916178de7
+
